@@ -10,7 +10,7 @@
 
 显示网格，全局背景，全局字体，字号，连接线颜色，文字颜色，图形底色，实体底色
 
-![image-20250205220440361](C:\Users\guo\AppData\Roaming\Typora\typora-user-images\image-20250205220440361.png)
+![alt text](image2.png)
 
 [在线演示地址](#) // 暂未上线
 

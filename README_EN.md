@@ -12,7 +12,7 @@ English | [简体中文](./README.md)
 
 Display grid, global background, global font, font size, connector color, text color, graphic background, entity background
 
-![image-20250205220440361](C:\Users\guo\AppData\Roaming\Typora\typora-user-images\image-20250205220440361.png)
+![alt text](image2.png)
 
 Demo Screenshot![alt text](image.png)
 
