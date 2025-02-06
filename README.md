@@ -12,7 +12,7 @@
 
 ![alt text](image2.png)
 
-[在线演示地址](#) // 暂未上线
+[在线演示地址](#http://106.15.65.113/)
 
 演示截图![alt text](image.png)
 
