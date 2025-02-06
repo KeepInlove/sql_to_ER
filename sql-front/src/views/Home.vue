@@ -8,7 +8,7 @@
             <h1>SQL to ER</h1>
           </div>
           <div class="header-right">
-            <a href="https://github.com/yourusername/sql-to-er" target="_blank" class="github-link">
+            <a href="https://github.com/KeepInlove/sql_to_ER" target="_blank" class="github-link">
               <i class="el-icon-platform-eleme"></i>
               <span>GitHub</span>
             </a>
@@ -68,7 +68,7 @@ export default {
         console.log('发送的原始SQL语句:', sql)
 
         // 发送原始SQL语句到服务器
-        const response = await axios.post('http://localhost:8080/api/er-diagram/parse', 
+        const response = await axios.post('http://106.15.65.113/sql-to-er/api/er-diagram/parse',
           { sql },
           {
             headers: {
@@ -78,10 +78,10 @@ export default {
             withCredentials: true
           }
         )
-        
+
         // 打印后端返回的数据
         console.log('后端返回的数据:', response.data)
-        
+
         if (response.data && Array.isArray(response.data) && response.data.length > 0) {
           erDiagram.value.updateDiagram(response.data)
           ElMessage.success('ER图生成成功')
@@ -104,7 +104,7 @@ export default {
         scale: 1,
         background: "white"
       })
-      
+
       const link = document.createElement('a')
       link.download = 'er-diagram.png'
       link.href = dataUrl
@@ -137,7 +137,7 @@ export default {
         document.body.appendChild(a)
         a.click()
         document.body.removeChild(a)
-        
+
         ElMessage.success('图片已导出')
       } catch (error) {
         console.error('导出图片时发生错误:', error)
@@ -183,12 +183,12 @@ export default {
   display: flex;
   align-items: center;
   gap: 12px;
-  
+
   i {
     font-size: 32px;
     color: #409eff;
   }
-  
+
   h1 {
     font-size: 24px;
     font-weight: 600;
@@ -206,11 +206,11 @@ export default {
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
-    
+
     &:hover {
       color: #409eff;
     }
-    
+
     i {
       font-size: 20px;
     }
@@ -229,4 +229,4 @@ export default {
 .el-row {
   margin-bottom: 0 !important;
 }
-</style> 
+</style>
